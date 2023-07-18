@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <h1>WELCOME!</h1><br>
+    <input id="angka-1" name="angka-1" placeholder="angka-1" type="number">
+    <br><br>
+    <input id="angka-2" name="angka-2" placeholder="angka-2" type="number"> 
+    <br><br>
+    <button onclick="warning()">Hitung</button>
+    <script>
+        function warning() {
+            let angkaPertama = document.getElementById("angka-1").value
+            let angkaKedua = document.getElementById("angka-2").value
+            let hasil = parseInt(angkaPertama) + parseInt(angkaKedua)
+            document.write('Hasilnya adalah ' + hasil)
+            console.log(hasil)
+        }
+    </script>
+</body>
+</html>

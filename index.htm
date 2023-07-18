@@ -1,0 +1,27 @@
+<!--Belajar memasukkan java script ke html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <h1>WELCOME!</h1><br>
+    <input id="nama-depan" name="nama-depan" placeholder="Nama Depan">
+    <br><br>
+    <input id="nama-belakang" name="nama-belakang" placeholder="Nama Belakang"> 
+    <br><br>
+    <button onclick="warning()">ini tombol woi</button>
+    <script>
+        function warning() {
+            let namaDepan = document.getElementById("nama-depan").value
+            let namaBelakang = document.getElementById("nama-belakang").value
+            alert("sudah diklik");
+            console.log(namaDepan, namaBelakang);
+        }
+    </script>
+</body>
+</html>
